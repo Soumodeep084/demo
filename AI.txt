@@ -377,6 +377,67 @@ Enter your choice: 3
 Exiting...
 BUILD SUCCESSFUL (total time: 37 seconds)
 
+
+
+Vertices: 5
+Nodes: A B C D E
+
+Edges:
+A B
+A C
+B D
+C E
+
+     A
+    / \
+   B   C
+   |   |
+   D   E
+
+Enter number of vertices: 5
+Enter node names:
+A B C D E
+Enter number of edges: 4
+Enter edges:
+A B
+A C
+B D
+C E
+
+--- MENU ---
+1. BFS
+2. DFS
+3. Exit
+Enter your choice: 1
+Enter starting node: A
+Enter ending node: E
+
+BFS Traversal:
+OPEN                           X          CLOSED
+--------------------------------------------------------------
+[A]                            A          [A]
+[B, C]                         B          [A, B]
+[C, D]                         C          [A, B, C]
+[D, E]                         D          [A, B, C, D]
+[E]                            E          [A, B, C, D, E]
+
+Final Path: [A, B, C, D, E]
+
+
+Enter your choice: 2
+Enter starting node: A
+Enter ending node: E
+
+DFS Traversal:
+OPEN                           X          CLOSED
+--------------------------------------------------------------
+[A]                            A          [A]
+[C, B]                         C          [A, C]
+[E, B]                         E          [A, C, E]
+
+Final Path: [A, C, E]
+
+
 ===============================================================================================================================
 EXP 5 ( A Star Algo)
 import java.util.ArrayList;
